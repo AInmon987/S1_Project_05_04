@@ -1,4 +1,12 @@
 @charset "utf-8";
+
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'), url('cac_champagne.ttf') format('tff');
+    font-family: dobkin;
+    src: url('DobkinPlain.woff') format('woff'), url('DobkinPlain.ttf') format('tff');
+}
+
 /* New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 3
    Case Problem 4
@@ -10,3 +18,98 @@
    Filename: pcg_paper.css
    Supporting Files:  
    */
+
+
+body {
+    background-color: rgb(193, 181, 161);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    min-width: 640px;
+    width: 95%;
+}
+
+body>header>img {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+nav.horizontal ul li {
+    background-color: rgb(96, 87, 70);
+    display: block;
+    font-size: 15px;
+    float: left;
+    line-height: 100px;
+    height: 33px;
+    width: 115px;
+}
+
+nav.horizontal a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav.horizontal a:link,
+nav.horizontal:visited {
+    color: whitesmoke;
+}
+
+nav.horizontal a:hover,
+nav.horizontal:active {
+    background-color: rgb(166, 151, 106);
+}
+
+#rightcol>nav>h2 {
+    color: rgb(34, 43, 66);
+    text-shadow: 2px 2.5px 4px gray;
+}
+
+#rightcol {
+    background-color: rgb(193, 181, 161);
+}
+
+#rightcol>nav>ul a:hover {
+    color: rgb(39, 54, 92);
+    font-size: 1.25em;
+    text-decoration: none;
+
+}
+
+body>section#rightcol {
+    width: 31.001%;
+    float: left;
+    margin-left: 0%;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    -webkit-transition: font-size .25s, ease-out .25s;
+    transition: font-size .25s, ease-out .25s;
+    line-height: 2.2em;
+    text-decoration: none;
+}
+
+div.row {
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+}
