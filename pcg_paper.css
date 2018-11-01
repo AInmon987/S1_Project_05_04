@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/* The font face id for the text fonts for the text for the whole html. */
+
 @font-face {
     font-family: Champagne;
     src: url('cac_champagne.woff') format('woff'), url('cac_champagne.ttf') format('tff');
@@ -19,18 +21,20 @@
    Supporting Files:  
    */
 
+/* The html rule is for the whole page.  */
+
 html {
     background-color: rgb(193, 181, 161);
 
 
 }
-
+/* the body element is for the body of the page and it has the font family for the text and has a background color. */
 body {
     background-color: rgb(193, 181, 161);
     font-family: 'Libre Franklin',
         sans-serif;
 }
-
+/*  the rule is for the body and its the margins and the widths for the webpage.  */
 body {
     margin-left: auto;
     margin-right: auto;
@@ -38,14 +42,14 @@ body {
     min-width: 640px;
     width: 95%;
 }
-
+/*  the rule is for the img that is in the header that is inside of the body and it has a relative position and a width of hundred percent. */
 body>header>img {
     position: relative;
     display: block;
     width: 100%;
 
 }
-
+/* the rule is for the list items thats in the unordered list that is in the nav and has a class of horizontal. The display is block.  */
 nav.horizontal ul li {
     background-color: rgb(96, 87, 70);
     display: block;
@@ -55,27 +59,27 @@ nav.horizontal ul li {
     height: 33px;
     width: 115px;
 }
-
+/*  The rule is for the anchor tags thats in the nav and has a class of horizontal.  */
 nav.horizontal a {
     display: block;
     text-align: center;
     text-decoration: none;
 }
-
+/* The rule is for the anchor links and the color is whitesmoke.  */
 nav.horizontal a:link,
 nav.horizontal:visited {
     color: whitesmoke;
 }
-
+/* The rule is for the anchor links and when the cursor is hovered over the links, the text change to the color black.  */
 nav.horizontal a:hover,
 nav.horizontal:active {
     background-color: black;
 }
-
+/* The rule is for the first list item and it has a margin to the left of 2.  */
 nav.horizontal li:first-child {
     margin-left: 2;
 }
-
+/* The rule is for the last list item in the nav and has a class of horizontal and has a margin of 2 to the right.  */
 nav.horizontal li:last-child {
     margin-right: 2;
 }
@@ -119,33 +123,33 @@ nav.topnavigation a:active {
 
 
 
-
+/* the rule is for the secodary headings and has a txt shadow of grey and the color is blue.  */
 #rightcol>nav>h2 {
     color: rgb(34, 43, 66);
     text-shadow: 2px 2.5px 4px gray;
 }
-
+/* The rule is for the id tag of rightcol and the background color is tan.  */
 #rightcol {
     background-color: rgb(193, 181, 161);
 }
-
+/* The rule is for the anchor tags that are n the unordered list and in the id tag rightcol. When the inks are hovered by the cursor, the text turns black.  */
 #rightcol>nav>ul a:hover {
     color: black;
     font-size: 1.25em;
     text-decoration: none;
 
 }
-
+/* the rule is for the id tag rightcol and in the section and that is in the body element.  */
 body>section#rightcol {
     width: 25%;
     float: right;
     margin-left: 20%;
 }
-
+/* For the list items that are in the unoredered list that is in the nav.  */
 nav ul li {
     list-style-type: none;
 }
-
+/* The rule is for the anchor tags that are in the list items that is in th unoredered list that is in the nav. There are tranformations of .25 seconds.  */
 nav ul li a {
     color: whitesmoke;
     -webkit-transition: font-size .25s, ease-out .25s;
@@ -153,7 +157,7 @@ nav ul li a {
     line-height: 2.2em;
     text-decoration: none;
 }
-
+/* The article that has a class of leftcol and the padding is 25px and the color of the text is black.  */
 article.leftcol {
     color: black;
     padding: 25px;
